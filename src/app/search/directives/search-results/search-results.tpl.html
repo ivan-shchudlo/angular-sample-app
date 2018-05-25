@@ -1,0 +1,11 @@
+<p ng-if="$ctrl.list && !$ctrl.list.length" red-color style="color: {{color}};">
+    Sorry, nothing found
+</p>
+
+<ul ng-if="$ctrl.list && $ctrl.list.length">
+    <li ng-repeat="result in $ctrl.list" log-scope>
+        <a href="{{result.url}}" target="_blank">
+            {{result.name}}
+        </a>
+    </li>
+</ul>
