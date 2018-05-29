@@ -7,6 +7,10 @@ export default function config($stateProvider) {
     $stateProvider.state('angular-sample-app.home', {
         template,
         controller: HomeController,
-        url: '/home'
+        controllerAs: '$ctrl',
+        url: '/home',
+        data: {
+            showHeader: false
+        }
     });
 }

@@ -5,6 +5,6 @@ import logScopeDirective from './log-scope.directive';
 
 export default angular.module('angular-sample-app.search.directives', [])
     .directive('searchBox', searchBox)
-    .directive('searchResults', searchResults)
+    .component('searchResults', searchResults)
     .directive('redColor', redColorDirective)
     .directive('logScope', logScopeDirective);

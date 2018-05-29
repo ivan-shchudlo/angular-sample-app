@@ -2,8 +2,9 @@
     Wikipedia search
 
     <a ui-sref=".about">About</a>
-    <a ui-sref=".search">Search</a>
+    <a ui-sref=".search({ searchString: '' })">Search</a>
     <a ui-sref=".home">Home</a>
 </header>
-<md-button>Material button</md-button>
+<md-progress-linear md-mode="indeterminate" ng-if="$ctrl.isLoading"></md-progress-linear>
 <main ui-view></main>
+

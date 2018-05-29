@@ -1,4 +1,5 @@
 import template from './app.tpl.html';
+import AppController from './app.controller';
 
 export default function config(
     $locationProvider,
@@ -15,6 +16,8 @@ export default function config(
         name: 'app',
         abstract: true,
         template,
+        controller: AppController,
+        controllerAs: '$ctrl',
         url: '',
     });
 }

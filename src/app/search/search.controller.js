@@ -1,7 +1,8 @@
 export default class SearchController {
-    constructor(wikipediaSearchService) {
+    constructor(wikipediaSearchService, searchResults, $state) {
         'ngInject';
 
+        this.results = searchResults;
         this._wikipediaSearchService = wikipediaSearchService;
     }
 

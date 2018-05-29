@@ -1,7 +1,9 @@
 export default class HomeController {
-    constructor() {
+    constructor($state) {
+        this._$state = $state;
     }
 
-    $onInit() {
+    goToSearch() {
+        this._$state.go('angular-sample-app.search', { searchString: 'bla' });
     }
 }
