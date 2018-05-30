@@ -26,3 +26,4 @@ const requiredModules = [
 export default angular.module('angular-sample-app', requiredModules)
     .config(appConfig)
     .run(appRun);
+

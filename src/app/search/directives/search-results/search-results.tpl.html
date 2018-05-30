@@ -3,7 +3,7 @@
 </p>
 
 <ul ng-if="$ctrl.list && $ctrl.list.length">
-    <li ng-repeat="result in $ctrl.list" log-scope>
+    <li ng-repeat="result in $ctrl.list">
         <a href="{{result.url}}" target="_blank">
             {{result.name}}
         </a>
